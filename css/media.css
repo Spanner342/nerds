@@ -1,0 +1,253 @@
+@media (max-width: 1024px) {
+
+    .burger {
+        display: inline-block;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+
+    .basket a {
+        color: transparent;
+        background-position: right;
+        display: inline-block;
+        background-size: contain;
+        height: 25px;
+    }
+
+
+    .nav {
+        justify-content: space-between;
+        position: relative;
+        padding-top: 20px;
+    }
+
+    .menu ul {
+        display: none;
+        justify-content: flex-start;
+        position: fixed;
+        left: 65%;
+        top: 0;
+        background-color: rgba(251,86,90, 0.8);
+        width: 250px;
+        height: 100%;
+        padding: 5%;
+    }
+
+    .menu ul li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .menu #nav_toogle:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .main_text h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    
+    .main {
+        border-bottom: transparent;
+    }
+
+    .services_list {
+       flex-wrap: wrap;
+    }
+
+    .services_item:not(:last-child) {
+        margin-bottom: 50px;
+    }
+
+    .partners_border:not(:last-child) {
+        padding-right: 5px;
+    }
+
+    .footer_social {
+        width: auto;
+    }
+
+    .footer_wrapper {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .main_slider .page {
+        justify-content: center;
+    }
+
+    .img_slide {
+        display: none;
+    }
+
+    .main_text {
+        width: auto;
+        align-items: center;
+    }
+
+    .main_text p {
+        width: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .main_text h2 {
+        margin-bottom: 20px;
+    }
+
+    .services_list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services_item {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .services_item:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .about_wrapper {
+       flex-direction: column-reverse;
+       justify-content: center;
+       text-align: center;
+    }
+
+   .about_stats {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+   }
+
+   .about_stats .about_img {
+       width: 80%;
+       margin: 0 auto;
+   }
+
+   .about_stats .about_img img {
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .about_stats h4 {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .about_text {
+        width: auto;
+    }
+
+    .stats_wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .about_text p {
+        width: auto;
+    }
+
+    .about_text h2 {
+        font-size: 26px;
+    }
+
+    .partners_wrapper {
+       flex-direction: column;
+    }
+
+    .partners_border {
+        height: auto;
+    }
+
+    .partners_border:not(:last-child) {
+        border-right: transparent;
+        border-bottom: 2px solid #eeeeee;
+        padding-right: 0;
+        padding-bottom: 25px;
+    }
+
+    .addres_block {
+        width: 230px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        position: relative;
+        top: 0;
+        align-items: center;
+    }
+
+    .footer_wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer_text {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .addres_block .btn {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .container {
+        width: 90%;
+    }
+
+    nav .logo img {
+        width: 60%;
+    }
+
+    .main_text h2 {
+        font-size: 30px;
+        text-align: center;
+        
+    }
+
+    .address iframe {
+        display: none;
+    }
+
+    .addres_block {
+        margin-bottom: 0px;
+    }
+
+    .stats_wrapper {
+        width: auto;
+    }
+    .stats_wrapper .stats_digit {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .services_item .services_img img {
+        width: 99%;
+    }
+
+    .services_item{
+        width: auto;
+    }
+
+    .services_img {
+        width: 80%;
+    }
+}

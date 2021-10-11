@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #283136;
+}
+
+.nerds section:not(:first-child){
+    padding: 80px 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto; 
+}
+
+.btn {
+    width: 160px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #fb565a;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section {
+    border-bottom: 2px solid #eeeeee;
+}
+
+.main {
+    background-color: #eeeeee;
+}
+
+nav .logo img {
+    display: block;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight:500;
+
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.basket {
+    text-align: right;
+}
+
+.basket a {
+    text-decoration: none;
+    color: black;
+
+    background-image: url(/images/cart-icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+    
+}
+
+.burger {
+    width: 30px;
+    height: 30px;
+    background-color: #eeeeee;
+    border: 1px solid black;
+    position: relative;
+    display: none;
+}
+
+.burger .burger_line {
+    display: inline-block;
+    width: 15px;
+    height: 1px;
+    background-color: black;
+    vertical-align: middle;
+    position: relative;
+}
+
+.burger .burger_line::after {
+    content:'';
+
+    display: inline-block;
+    width: 15px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+.burger .burger_line::before{
+    content:'';
+
+    display: inline-block;
+    width: 15px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+#nav_toogle {
+    display: none;
+}
+
+.nav label {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.img_slide {
+   width:55%;
+}
+
+.img_slide img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main_slider .page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45%;
+}
+
+.main_text h2{
+    font-size: 55px;
+    line-height: 55px;
+    color: black;
+}
+
+.main_text p {
+    width: 85%;
+}
+
+.services_list {
+    display: flex;
+}
+
+.services_item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.services_item:not(:last-child){
+    margin-right: 100px;
+}
+
+.services_item .services_img img {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.services_item h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.services_item p {
+    width: 85%;
+    margin-bottom: 35px;
+    margin-top: 30px;
+}
+
+.services_item a{
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+    text-transform: uppercase;    
+}
+
+.btn_red {
+    background-color:#fb565a ;
+}
+
+.btn_green {
+    background-color: #00ca74;
+}
+
+.btn_gold {
+    background-color: #efc84a;
+}
+
+.about_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_text {
+    width: 50%;
+}
+
+.about_text h2 {
+    font-size: 45px;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.about_text p {
+    width: 86%;
+    margin-bottom: 45px;
+}
+
+.about_text h4 {
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.about_text ul {
+    list-style: none;
+}
+
+.about_text ul p {
+    padding-left: 35px;
+    position: relative;
+}
+
+.about_text ul p::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.about_stats .about_img img {
+    display: block;
+    margin-bottom: 35px;
+    margin-left: auto;
+}
+
+.about_stats h4 {
+    text-align: center;
+    width: 360px;
+    margin-left: auto;
+}
+
+.stats_wrapper {
+    display: flex;
+    width: 360px;
+}
+
+.stats_wrapper ul {
+    list-style: none;
+    margin-top: 55px;
+}
+
+.stats_wrapper .stats_digit {
+    font-size: 45px;
+    font-weight: bold;
+    display: block;
+}
+
+.stats_wrapper .stats_digit::after {
+    content: '%';
+
+    font-size: 25px;
+    vertical-align: top;
+}
+
+.partners_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.partners_wrapper img {
+    display: block;
+}
+
+.partners_border {
+    height: 60px;
+}
+
+.partners_border:not(:last-child) {
+    border-right: 2px solid #eeeeee;
+    padding-right: 60px;
+}
+
+.address .container {
+    position: relative;
+}
+
+.addres_block {
+    width: 300px;
+    height: 240px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    top: calc(330px - 250px);
+}
+
+.addres_block h4 {
+    margin-bottom: 35px;
+}
+
+.addres_block p {
+    color: #666666;
+    width: 65%;
+    
+}
+
+.addres_block p:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.addres_block .btn {
+    margin-top: 40px;
+}
+
+.footer {
+    padding: 70px 0;
+}
+
+.footer_wrapper {
+    display: flex;
+}
+
+.footer_social {
+    display: flex;
+    width: 30%;
+}
+
+.footer_social a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer_social a:nth-child(1) {
+    background-image: url(/images/vk-icon.png);
+}
+
+.footer_social a:nth-child(2) {
+    background-image: url(/images/fb-icon.png);
+}
+
+.footer_social a:nth-child(3) {
+    background-image: url(/images/insta-icon.png);
+}
+
+.footer_social a:not(:last-child) {
+    margin-right: 15px;
+}
+
+.footer_text h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.footer_text p {
+    color: #444444;
+}
